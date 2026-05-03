@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1972b52-f3df-4598-aa80-969a0a0948de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/XlsxReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StudyProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StudyProfile.java" afterDir="false" />
-    </list>
+    <list default="true" id="f1972b52-f3df-4598-aa80-969a0a0948de" name="Changes" comment="Обновление по второй части задания" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,11 +64,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777831818158</updated>
-      <workItem from="1777831819649" duration="1902000" />
+      <workItem from="1777831819649" duration="2204000" />
     </task>
+    <task id="LOCAL-00001" summary="Обновление по второй части задания">
+      <option name="closed" value="true" />
+      <created>1777833975074</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1777833975074</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Обновление по второй части задания" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновление по второй части задания" />
   </component>
 </project>
