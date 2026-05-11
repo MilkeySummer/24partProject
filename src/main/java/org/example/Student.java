@@ -32,7 +32,7 @@ public class Student {
         return this;
     }
 
-    public int getCurrentCourseNumber(String courseNumber) {
+    public int getCurrentCourseNumber() {
         return currentCourseNumber;
     }
 

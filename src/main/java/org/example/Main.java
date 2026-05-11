@@ -7,13 +7,16 @@ public class Main {
         List<University> universities = XlsxReader.readUniversities(filePath, "Университеты");
         List<Student> students = XlsxReader.readStudents(filePath, "Студенты");
 
-        System.out.println(" Университеты ");
-        for (University u : universities) {
-            System.out.println(u);
-        }
-        System.out.println("\n Студенты ");
-        for (Student s : students) {
-            System.out.println(s);
-        }
+        StudentComparator studentComparator = ComparatorUtil.getStudentComparator(StudentComparators.StudentFullNameComparator);
+        UniversityComparator universityComparator = ComparatorUtil.getUniversityComparator(UniversityComparators.UniversityShortNameComparator);
+        System.out.println("Студенты:");
+        students.stream()
+                .sorted(studentComparator)
+                .forEach(System.out::println);
+
+        System.out.println("\nУниверситеты:");
+        universities.stream()
+                .sorted(universityComparator)
+                .forEach(System.out::println);
     }
 }
