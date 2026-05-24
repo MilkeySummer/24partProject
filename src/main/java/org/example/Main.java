@@ -53,5 +53,7 @@ public class Main {
                 .peek(System.out::println)
                 .map(JsonUtil::deserializeUniversity)
                 .forEach(System.out::println);
+        List<Statistics> statistics = CollectionUtil.getStatistics(students, universities);
+        XlsWriter.writeStatistics(statistics,"Статистика.xlsx" );
     }
 }
