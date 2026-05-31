@@ -6,13 +6,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class XlsxReader {
+    private static final Logger logger = Logger.getLogger(XlsxReader.class.getName());
     private XlsxReader() {
     }
 
     public static List<University> readUniversities(String filePath, String sheetName) {
         List<University> universities = new ArrayList<>();
+        logger.info("Начало чтения университетов из файла: " + filePath);
         try (FileInputStream fis = new FileInputStream(filePath);
              Workbook workbook = new XSSFWorkbook(fis)) {
             Sheet sheet = workbook.getSheet(sheetName);
@@ -38,16 +42,18 @@ public class XlsxReader {
                         .setYearOfFoundation(year)
                         .setMainProfile(profile);
 
-                universities.add(university);
+                 universities.add(university);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Ошибка чтения Excel файла", e);
         }
+        logger.info("Прочитано университетов: " + universities.size());
         return universities;
     }
 
     public static List<Student> readStudents(String filePath, String sheetName) {
         List<Student> students = new ArrayList<>();
+        logger.info("Начало чтения студентов из файла: " + filePath);
         try (FileInputStream fis = new FileInputStream(filePath);
              Workbook workbook = new XSSFWorkbook(fis)) {
             Sheet sheet = workbook.getSheet(sheetName);
@@ -72,8 +78,9 @@ public class XlsxReader {
                 students.add(student);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Ошибка чтения Excel файла", e);
         }
+        logger.info("Прочитано студентов: " + students.size());
         return students;
     }
 }

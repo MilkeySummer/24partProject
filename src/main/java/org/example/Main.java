@@ -1,59 +1,46 @@
+
 package org.example;
+import java.io.IOException;
 import java.util.List;
+import java.util.logging.LogManager;
 import java.util.stream.Collectors;
+import java.util.logging.Logger;
+
 
 public class Main {
+    private static Logger logger;
+
     public static void main(String[] args) {
+        try {
+            System.setProperty("java.util.logging.config.file", "logging.properties");
+            LogManager.getLogManager().readConfiguration();
+            logger = Logger.getLogger(Main.class.getName());
+        } catch (IOException e) {
+            logger = Logger.getLogger(Main.class.getName());
+            logger.severe("Не удалось загрузить logging.properties: " + e.getMessage());
+        }
+
+        logger.info("Программа запущена");
         String filePath = "src/main/resources/universityInfo.xlsx";
         List<University> universities = XlsxReader.readUniversities(filePath, "Университеты");
         List<Student> students = XlsxReader.readStudents(filePath, "Студенты");
+        logger.info("Файлы студентов прочитаны: " + students.size() + " и файлы университетов прочитаны: " + universities.size());
 
         StudentComparator studentComparator = ComparatorUtil.getStudentComparator(StudentComparators.StudentFullNameComparator);
         UniversityComparator universityComparator = ComparatorUtil.getUniversityComparator(UniversityComparators.UniversityShortNameComparator);
-        System.out.println("Студенты:");
         students.stream()
                 .sorted(studentComparator)
-                .forEach(System.out::println);
+                .collect(Collectors.toList());
+        logger.info("Студенты отсортированы: " + students.size());
 
-        System.out.println("\nУниверситеты:");
         universities.stream()
                 .sorted(universityComparator)
-                .forEach(System.out::println);
+                .collect(Collectors.toList());
+        logger.info("Университеты отсортированы: " + universities.size());
 
-        String studentsJson = JsonUtil.serializeStudentList(students);                                //Сериализация коллекции студентов
-        System.out.println(studentsJson);                                                             //Сериализация коллекции универов
 
-        String universitiesJson = JsonUtil.serializeUniversityList(universities);
-        System.out.println(universitiesJson);
-
-        List<Student> studentsFromJson = JsonUtil.deserializeStudentList(studentsJson);               //Десериализация полученных коллекций студентов и добавление в новую коллекцию
-        List<University> universitiesFromJson = JsonUtil.deserializeUniversityList(universitiesJson); //Десериализация полученных коллекций универов и добавление в новую коллекцию
-
-        System.out.println("\n========= ПРОВЕРКА ДЕСЕРИАЛИЗАЦИИ =========");
-        if (students.size() == studentsFromJson.size()){
-            System.out.println("Десериализация студентов выполняется корректно");
-        }else{
-            System.out.println("Десериализация студентов выполняется не корректно");
-        }
-
-        if (universities.size() == universitiesFromJson.size()){
-            System.out.println("Десериализация университетов выполняется корректно");
-        }else{
-            System.out.println("Десериализация университетов выполняется не корректно");
-        }
-        System.out.println("===========================================\n");
-        students.stream()
-                .map(JsonUtil::serializeStudent)
-                .peek(System.out::println)
-                .map(JsonUtil::deserializeStudent)
-                .forEach(System.out::println);
-
-        universities.stream()
-                .map(JsonUtil::serializeUniversity)
-                .peek(System.out::println)
-                .map(JsonUtil::deserializeUniversity)
-                .forEach(System.out::println);
         List<Statistics> statistics = CollectionUtil.getStatistics(students, universities);
         XlsWriter.writeStatistics(statistics,"Статистика.xlsx" );
+        logger.info("Статистика собрана и записана в Excel");
     }
 }

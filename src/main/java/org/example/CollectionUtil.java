@@ -6,13 +6,18 @@ import java.util.stream.Collectors;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.OptionalDouble;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class CollectionUtil {
+    private static final Logger logger = Logger.getLogger(CollectionUtil.class.getName());
     private CollectionUtil() {
     }
 
+
     public static List<Statistics> getStatistics(List<Student> students, List<University> universities) {
+        logger.info("Сбор статистики для студентов: " + students.size() + " и для университетов: " + universities.size());
         Map<StudyProfile, List<University>> universitiesByProfile = universities.stream()
                 .collect(Collectors.groupingBy(University::getMainProfile));
 
@@ -30,6 +35,9 @@ public class CollectionUtil {
                         return unisOfProfile.stream().anyMatch(uni -> uni.getId().equals(student.getUniversityId()));
                     })
                     .collect(Collectors.toList());
+            if (studentsOfProfile.isEmpty()) {
+                logger.warning("Для профиля " + profile + " нет студентов");
+            }
             int studentsCount = studentsOfProfile.size();
             OptionalDouble avg = studentsOfProfile.stream()
                     .mapToDouble(Student::getAvgExamScore)
@@ -40,6 +48,7 @@ public class CollectionUtil {
             Statistics stat = new Statistics(profile, roundedAvg, studentsCount, universitiesCount, uniNames);
             result.add(stat);
         }
+        logger.info("Собрано статистики по " + result.size() + " профилям");
         return result;
     }
 }

@@ -5,14 +5,18 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
 public class XlsWriter {
+    private static final Logger logger = Logger.getLogger(XlsWriter.class.getName());
     private XlsWriter() {}
     public static void writeStatistics(List<Statistics> statisticsList, String filePath) {
+        logger.info("Начало записи статистики: " + filePath);
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet("Statistics");
         XSSFRow headerRow = sheet.createRow(0);
@@ -55,13 +59,14 @@ public class XlsWriter {
         try (FileOutputStream fos = new FileOutputStream(filePath))
         {
             workbook.write(fos);
+            logger.info("Запись статистики завершена. Записано строк: " + statisticsList.size());
         } catch (IOException e){
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Ошибка записи статистики в Excel", e);
         } finally {
             try {
               workbook.close();
             } catch (IOException e){
-                e.printStackTrace();
+                logger.log(Level.SEVERE, "Ошибка закрытия workbook", e);
             }
         }
 
