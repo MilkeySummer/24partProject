@@ -182,3 +182,467 @@
   <message>Статистика собрана и записана в Excel</message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-06-07T22:24:24.319151800Z</date>
+  <millis>1780871064319</millis>
+  <nanos>151800</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Программа запущена</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.345677200Z</date>
+  <millis>1780871064345</millis>
+  <nanos>677200</nanos>
+  <sequence>1</sequence>
+  <logger>org.example.XlsxReader</logger>
+  <level>INFO</level>
+  <class>org.example.XlsxReader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Начало чтения университетов из файла: src/main/resources/universityInfo.xlsx</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.931803200Z</date>
+  <millis>1780871064931</millis>
+  <nanos>803200</nanos>
+  <sequence>2</sequence>
+  <logger>org.example.XlsxReader</logger>
+  <level>INFO</level>
+  <class>org.example.XlsxReader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Прочитано университетов: 7</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.932808500Z</date>
+  <millis>1780871064932</millis>
+  <nanos>808500</nanos>
+  <sequence>3</sequence>
+  <logger>org.example.XlsxReader</logger>
+  <level>INFO</level>
+  <class>org.example.XlsxReader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Начало чтения студентов из файла: src/main/resources/universityInfo.xlsx</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.952825700Z</date>
+  <millis>1780871064952</millis>
+  <nanos>825700</nanos>
+  <sequence>4</sequence>
+  <logger>org.example.XlsxReader</logger>
+  <level>INFO</level>
+  <class>org.example.XlsxReader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Прочитано студентов: 11</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.954825300Z</date>
+  <millis>1780871064954</millis>
+  <nanos>825300</nanos>
+  <sequence>5</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Файлы студентов прочитаны: 11 и файлы университетов прочитаны: 7</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.960331900Z</date>
+  <millis>1780871064960</millis>
+  <nanos>331900</nanos>
+  <sequence>6</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Студенты отсортированы: 11</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.961335Z</date>
+  <millis>1780871064961</millis>
+  <nanos>335000</nanos>
+  <sequence>7</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Университеты отсортированы: 7</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.961335Z</date>
+  <millis>1780871064961</millis>
+  <nanos>335000</nanos>
+  <sequence>8</sequence>
+  <logger>org.example.CollectionUtil</logger>
+  <level>INFO</level>
+  <class>org.example.CollectionUtil</class>
+  <method>getStatistics</method>
+  <thread>1</thread>
+  <message>Сбор статистики для студентов: 11 и для университетов: 7</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.967840600Z</date>
+  <millis>1780871064967</millis>
+  <nanos>840600</nanos>
+  <sequence>9</sequence>
+  <logger>org.example.CollectionUtil</logger>
+  <level>WARNING</level>
+  <class>org.example.CollectionUtil</class>
+  <method>getStatistics</method>
+  <thread>1</thread>
+  <message>Для профиля MATHEMATICS нет студентов</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.967840600Z</date>
+  <millis>1780871064967</millis>
+  <nanos>840600</nanos>
+  <sequence>10</sequence>
+  <logger>org.example.CollectionUtil</logger>
+  <level>WARNING</level>
+  <class>org.example.CollectionUtil</class>
+  <method>getStatistics</method>
+  <thread>1</thread>
+  <message>Для профиля LINGUISTICS нет студентов</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.967840600Z</date>
+  <millis>1780871064967</millis>
+  <nanos>840600</nanos>
+  <sequence>11</sequence>
+  <logger>org.example.CollectionUtil</logger>
+  <level>INFO</level>
+  <class>org.example.CollectionUtil</class>
+  <method>getStatistics</method>
+  <thread>1</thread>
+  <message>Собрано статистики по 4 профилям</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:24.968839600Z</date>
+  <millis>1780871064968</millis>
+  <nanos>839600</nanos>
+  <sequence>12</sequence>
+  <logger>org.example.XlsWriter</logger>
+  <level>INFO</level>
+  <class>org.example.XlsWriter</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Начало записи статистики: Статистика.xlsx</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.081168600Z</date>
+  <millis>1780871065081</millis>
+  <nanos>168600</nanos>
+  <sequence>13</sequence>
+  <logger>org.example.XlsWriter</logger>
+  <level>INFO</level>
+  <class>org.example.XlsWriter</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Запись статистики завершена. Записано строк: 4</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.091676900Z</date>
+  <millis>1780871065091</millis>
+  <nanos>676900</nanos>
+  <sequence>14</sequence>
+  <logger>org.example.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.XmlWriter</class>
+  <method>writeRoot</method>
+  <thread>1</thread>
+  <message>Запись XML начата</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.202408400Z</date>
+  <millis>1780871065202</millis>
+  <nanos>408400</nanos>
+  <sequence>15</sequence>
+  <logger>org.example.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.XmlWriter</class>
+  <method>writeRoot</method>
+  <thread>1</thread>
+  <message>XML записан: xmlReqs/req_1780871065089.xml</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.203408500Z</date>
+  <millis>1780871065203</millis>
+  <nanos>408500</nanos>
+  <sequence>16</sequence>
+  <logger>org.example.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.JsonWriter</class>
+  <method>writeRoot</method>
+  <thread>1</thread>
+  <message>Запись JSON начата</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.229991200Z</date>
+  <millis>1780871065229</millis>
+  <nanos>991200</nanos>
+  <sequence>17</sequence>
+  <logger>org.example.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.JsonWriter</class>
+  <method>writeRoot</method>
+  <thread>1</thread>
+  <message>JSON записан: jsonReqs/req_1780871065089.json</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.229991200Z</date>
+  <millis>1780871065229</millis>
+  <nanos>991200</nanos>
+  <sequence>18</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Статистика собрана и записана в Excel</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-06-07T22:24:25.299101800Z</date>
+  <millis>1780871065299</millis>
+  <nanos>101800</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Программа запущена</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.328630300Z</date>
+  <millis>1780871065328</millis>
+  <nanos>630300</nanos>
+  <sequence>1</sequence>
+  <logger>org.example.XlsxReader</logger>
+  <level>INFO</level>
+  <class>org.example.XlsxReader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Начало чтения университетов из файла: src/main/resources/universityInfo.xlsx</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.758630400Z</date>
+  <millis>1780871065758</millis>
+  <nanos>630400</nanos>
+  <sequence>2</sequence>
+  <logger>org.example.XlsxReader</logger>
+  <level>INFO</level>
+  <class>org.example.XlsxReader</class>
+  <method>readUniversities</method>
+  <thread>1</thread>
+  <message>Прочитано университетов: 7</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.759628800Z</date>
+  <millis>1780871065759</millis>
+  <nanos>628800</nanos>
+  <sequence>3</sequence>
+  <logger>org.example.XlsxReader</logger>
+  <level>INFO</level>
+  <class>org.example.XlsxReader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Начало чтения студентов из файла: src/main/resources/universityInfo.xlsx</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.778675500Z</date>
+  <millis>1780871065778</millis>
+  <nanos>675500</nanos>
+  <sequence>4</sequence>
+  <logger>org.example.XlsxReader</logger>
+  <level>INFO</level>
+  <class>org.example.XlsxReader</class>
+  <method>readStudents</method>
+  <thread>1</thread>
+  <message>Прочитано студентов: 11</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.782186200Z</date>
+  <millis>1780871065782</millis>
+  <nanos>186200</nanos>
+  <sequence>5</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Файлы студентов прочитаны: 11 и файлы университетов прочитаны: 7</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.787185200Z</date>
+  <millis>1780871065787</millis>
+  <nanos>185200</nanos>
+  <sequence>6</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Студенты отсортированы: 11</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.787185200Z</date>
+  <millis>1780871065787</millis>
+  <nanos>185200</nanos>
+  <sequence>7</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Университеты отсортированы: 7</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.788689200Z</date>
+  <millis>1780871065788</millis>
+  <nanos>689200</nanos>
+  <sequence>8</sequence>
+  <logger>org.example.CollectionUtil</logger>
+  <level>INFO</level>
+  <class>org.example.CollectionUtil</class>
+  <method>getStatistics</method>
+  <thread>1</thread>
+  <message>Сбор статистики для студентов: 11 и для университетов: 7</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.791694Z</date>
+  <millis>1780871065791</millis>
+  <nanos>694000</nanos>
+  <sequence>9</sequence>
+  <logger>org.example.CollectionUtil</logger>
+  <level>WARNING</level>
+  <class>org.example.CollectionUtil</class>
+  <method>getStatistics</method>
+  <thread>1</thread>
+  <message>Для профиля LINGUISTICS нет студентов</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.793694700Z</date>
+  <millis>1780871065793</millis>
+  <nanos>694700</nanos>
+  <sequence>10</sequence>
+  <logger>org.example.CollectionUtil</logger>
+  <level>WARNING</level>
+  <class>org.example.CollectionUtil</class>
+  <method>getStatistics</method>
+  <thread>1</thread>
+  <message>Для профиля MATHEMATICS нет студентов</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.793694700Z</date>
+  <millis>1780871065793</millis>
+  <nanos>694700</nanos>
+  <sequence>11</sequence>
+  <logger>org.example.CollectionUtil</logger>
+  <level>INFO</level>
+  <class>org.example.CollectionUtil</class>
+  <method>getStatistics</method>
+  <thread>1</thread>
+  <message>Собрано статистики по 4 профилям</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.794693400Z</date>
+  <millis>1780871065794</millis>
+  <nanos>693400</nanos>
+  <sequence>12</sequence>
+  <logger>org.example.XlsWriter</logger>
+  <level>INFO</level>
+  <class>org.example.XlsWriter</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Начало записи статистики: Статистика.xlsx</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.874778900Z</date>
+  <millis>1780871065874</millis>
+  <nanos>778900</nanos>
+  <sequence>13</sequence>
+  <logger>org.example.XlsWriter</logger>
+  <level>INFO</level>
+  <class>org.example.XlsWriter</class>
+  <method>writeStatistics</method>
+  <thread>1</thread>
+  <message>Запись статистики завершена. Записано строк: 4</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.883287500Z</date>
+  <millis>1780871065883</millis>
+  <nanos>287500</nanos>
+  <sequence>14</sequence>
+  <logger>org.example.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.XmlWriter</class>
+  <method>writeRoot</method>
+  <thread>1</thread>
+  <message>Запись XML начата</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.963862800Z</date>
+  <millis>1780871065963</millis>
+  <nanos>862800</nanos>
+  <sequence>15</sequence>
+  <logger>org.example.XmlWriter</logger>
+  <level>INFO</level>
+  <class>org.example.XmlWriter</class>
+  <method>writeRoot</method>
+  <thread>1</thread>
+  <message>XML записан: xmlReqs/req_1780871065880.xml</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.964863200Z</date>
+  <millis>1780871065964</millis>
+  <nanos>863200</nanos>
+  <sequence>16</sequence>
+  <logger>org.example.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.JsonWriter</class>
+  <method>writeRoot</method>
+  <thread>1</thread>
+  <message>Запись JSON начата</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.987431600Z</date>
+  <millis>1780871065987</millis>
+  <nanos>431600</nanos>
+  <sequence>17</sequence>
+  <logger>org.example.JsonWriter</logger>
+  <level>INFO</level>
+  <class>org.example.JsonWriter</class>
+  <method>writeRoot</method>
+  <thread>1</thread>
+  <message>JSON записан: jsonReqs/req_1780871065880.json</message>
+</record>
+<record>
+  <date>2026-06-07T22:24:25.987431600Z</date>
+  <millis>1780871065987</millis>
+  <nanos>431600</nanos>
+  <sequence>18</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Статистика собрана и записана в Excel</message>
+</record>
+</log>

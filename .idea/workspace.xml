@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1972b52-f3df-4598-aa80-969a0a0948de" name="Changes" comment="Обновление по второй части задания">
-      <change afterPath="$PROJECT_DIR$/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/JsonWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Root.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/StatisticsEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UniversityEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/XmlWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/studentEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CollectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CollectionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JsonUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/XlsWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/XlsWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/XlsxReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/XlsxReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Статистика.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Статистика.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +54,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -94,7 +97,10 @@
       <workItem from="1779651003474" duration="6913000" />
       <workItem from="1779816623600" duration="15000" />
       <workItem from="1780231797044" duration="7332000" />
-      <workItem from="1780240862220" duration="1693000" />
+      <workItem from="1780240862220" duration="2176000" />
+      <workItem from="1780764719057" duration="91000" />
+      <workItem from="1780835278679" duration="9645000" />
+      <workItem from="1780868482391" duration="2202000" />
     </task>
     <task id="LOCAL-00001" summary="Обновление по второй части задания">
       <option name="closed" value="true" />
